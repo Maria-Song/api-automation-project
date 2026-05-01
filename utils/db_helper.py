@@ -1,6 +1,6 @@
 import pymysql
 from dbutils.pooled_db import PooledDB
-from config.init import DB_CONF
+from config import DB_CONF
 from utils.logger import get_logger
 
 logger = get_logger(__name__)

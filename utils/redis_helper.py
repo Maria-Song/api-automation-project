@@ -1,5 +1,5 @@
 import redis
-from config.init import REDIS_CONF
+from config import REDIS_CONF
 
 class RedisHelper:    #获取 Redis 客户端（单例模式）
     _client = None

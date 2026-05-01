@@ -1,5 +1,5 @@
 from core.http_client import HttpClient
-from config.init import USER_CONF
+from config import USER_CONF
 from utils.logger import get_logger
 
 logger = get_logger(__name__)

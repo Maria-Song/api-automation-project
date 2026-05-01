@@ -1,7 +1,7 @@
 import requests
 import allure
-from config.init import BASE_URL, TIMEOUT
-from utils.init import get_logger
+from config import BASE_URL, TIMEOUT
+from utils import get_logger
 
 logger = get_logger(__name__)
 

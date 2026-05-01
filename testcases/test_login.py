@@ -2,8 +2,8 @@
 import pytest
 import allure
 from pathlib import Path
-from utils.init import FileReader
-from core.init import BaseApi, Assertions
+from utils import FileReader
+from core import BaseApi, Assertions
 from core.decorators import api_retry
 
 data = FileReader.read_yaml(Path(__file__).parent.parent / "data" / "login_data.yaml")
