@@ -1,0 +1,10 @@
+pytest>=7.0
+requests>=2.31.0
+pyyaml>=6.0
+allure-pytest>=2.13.2
+allure-python-commons>=2.13.2
+pytest-rerunfailures>=11.0
+faker>=24.0
+pymysql>=1.1.0
+DBUtils>=3.0.3
+redis>=5.0.1

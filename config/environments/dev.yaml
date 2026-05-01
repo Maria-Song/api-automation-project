@@ -1,0 +1,21 @@
+base_url: "https://httpbin.org"
+timeout: 10
+retry: 2
+
+db:
+  host: "192.168.1.10"
+  port: 3306
+  user: "dev_user"
+  password: "dev123456"
+  database: "dev_db"
+  charset: "utf8mb4"
+
+redis:
+  host: "192.168.1.11"
+  port: 6379
+  password: ""
+  db: 0
+
+user:
+  username: "dev_admin"
+  password: "dev_admin_123"

@@ -1,0 +1,15 @@
+- case_name: 创建订单
+  method: POST
+  url: /post
+  json:
+    product_id: 1001
+    quantity: 2
+    user_id: 1001
+  expect_code: 200
+
+- case_name: 查询订单详情
+  method: GET
+  url: /get
+  params:
+    order_id: 5001
+  expect_code: 200

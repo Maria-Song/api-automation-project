@@ -1,0 +1,8 @@
+import yaml
+from pathlib import Path
+
+class FileReader:
+    @staticmethod
+    def read_yaml(file_path):
+        with open(file_path, "r", encoding="utf-8") as f:
+            return yaml.safe_load(f)

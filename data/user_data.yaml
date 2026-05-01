@@ -1,0 +1,21 @@
+- case_name: 获取用户信息
+  method: GET
+  url: /get
+  params:
+    user_id: 1001
+  expect_code: 200
+
+- case_name: 获取用户列表
+  method: GET
+  url: /get
+  params:
+    page: 1
+    size: 10
+  expect_code: 200
+
+- case_name: 查询不存在的用户
+  method: GET
+  url: /get
+  params:
+    user_id: 999999
+  expect_code: 404

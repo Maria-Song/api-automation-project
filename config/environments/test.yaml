@@ -1,0 +1,21 @@
+base_url: "https://httpbin.org"
+timeout: 10
+retry: 2
+
+db:
+  host: "192.168.2.10"
+  port: 3306
+  user: "test_user"
+  password: "test123456"
+  database: "test_db"
+  charset: "utf8mb4"
+
+redis:
+  host: "192.168.2.11"
+  port: 6379
+  password: ""
+  db: 0
+
+user:
+  username: "test_admin"
+  password: "test_admin_123"

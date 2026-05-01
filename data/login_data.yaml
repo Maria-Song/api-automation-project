@@ -1,0 +1,35 @@
+- case_name: 登录成功
+  method: POST
+  url: /post
+  json:
+    username: admin
+    password: 123456
+  expect_code: 200
+
+- case_name: 密码错误
+  method: POST
+  url: /post
+  json:
+    username: admin
+    password: wrong
+  expect_code: 401
+
+- case_name: 用户名为空
+  method: POST
+  url: /post
+  json:
+    username: ""
+    password: 123456
+  expect_code: 400
+
+- case_name: 登录成功
+  method: POST
+  url: /post
+  json:
+    username: admin
+    password: 123456
+  expect_code: 200
+  expect_json:
+    json:
+      username: admin
+      password: 123456
